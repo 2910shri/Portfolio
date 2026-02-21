@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shriharsh Kulkarni | Java Developer</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #0f172a;
+        color: #f1f5f9;
+        line-height: 1.6;
+    }
+
+    header {
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #1e293b;
+    }
+
+    header h1 {
+        color: #38bdf8;
+    }
+
+    nav a {
+        color: #f1f5f9;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #38bdf8;
+    }
+
+    section {
+        padding: 80px 50px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        color: #94a3b8;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #38bdf8;
+        color: #0f172a;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .skills, .projects {
+        background: #1e293b;
+        border-radius: 10px;
+        padding: 30px;
+        margin-top: 40px;
+    }
+
+    .skills ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .skills li {
+        background: #334155;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .project-card {
+        background: #334155;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #1e293b;
+        margin-top: 50px;
+    }
+
+    @media(max-width: 768px){
+        header {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Shriharsh Kulkarni</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Java Backend Developer</h2>
+    <p>Passionate Spring Boot Developer building scalable backend systems and REST APIs.</p>
+    <a href="https://github.com/2910shri" class="btn" target="_blank">View GitHub</a>
+    <a href="file:///C:/Users/kulka/Downloads/Shriharsh-Resume_Final-1770029184966.pdf" class="btn" target="_blank">
+    View Resume</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+ 
+    <p>
+        I am a passionate and detail-oriented Java Backend Developer with hands-on experience 
+        in building scalable web applications using Java, Spring Boot, REST APIs, and MySQL. 
+        I enjoy designing clean architectures and developing efficient backend systems that 
+        solve real-world problems.
+    </p>
+    <br>
+    <p>
+        I have worked on full-stack projects integrating React frontends with Spring Boot 
+        backends, implementing secure API communication and environment-based configuration 
+        for sensitive data. My strong foundation in Data Structures, OOP principles, and 
+        database management allows me to write optimized and maintainable code.
+    </p>
+    <br>
+    <p>
+        I am continuously learning and improving my technical skills, with a strong interest 
+        in backend development, system design, and building production-ready applications. 
+        I am currently seeking an entry-level opportunity where I can contribute, grow, and 
+        add value to a development team.
+    </p>
+</section>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>REST APIs</li>
+        <li>MySQL</li>
+        <li>React</li>
+        <li>HTML/CSS</li>
+        <li>Git & GitHub</li>
+        <li>Maven</li>
+    </ul>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+        <h3>Interview Question Engine</h3>
+        <p>
+            A Spring Boot-based interview simulation platform that generates technical questions dynamically
+            and integrates with a responsive frontend.
+        </p>
+        <a href="https://github.com/2910shri/Interview_Question_Engine" class="btn" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Resume Analyzer</h3>
+        <p>
+            AI-powered resume analysis system developed using Java and Spring Boot.
+            Parses resumes, evaluates skill relevance, and provides structured feedback.
+            Integrated React frontend with MySQL backend.
+        </p>
+        <a href="https://github.com/2910shri/Reaume-Analyzer" class="btn" target="_blank">
+            View Project
+        </a>
+    </div>
+
+    <div class="project-card">
+        <h3>AI Content Generator</h3>
+        <p>
+            REST API-based content generation platform using Spring Boot.
+            Integrated external AI APIs securely using environment variables
+            and built responsive frontend for dynamic content generation.
+        </p>
+        <a href="https://github.com/2910shri/ai-content-generator" class="btn" target="_blank">
+            View Project
+        </a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: kulkarnishriharsh2910@email.com</p>
+    <p>LinkedIn: www.linkedin.com/in/shriharsh-kulkarni-41b889286</p>
+    
+</section>
+
+<footer>
+    <p>© 2026 Shriharsh Kulkarni | Java Developer</p>
+</footer>
+
+</body>
+</html>
