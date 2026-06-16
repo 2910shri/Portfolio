@@ -110,6 +110,23 @@
             flex-direction: column;
         }
     }
+
+   .skill-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:20px;
+      justify-content:center;
+      }
+      
+   .skill-badges img{
+      transition:0.3s;
+      }
+
+   .skill-badges img:hover{
+      transform:scale(1.08);
+      }
+
 </style>
 </head>
 <body>
@@ -160,16 +177,33 @@
 <section id="skills" class="skills">
     <h2>Skills</h2>
     <ul>
-        <li>Java</li>
-        <li>Spring Boot</li>
-        <li>REST APIs</li>
-        <li>MySQL</li>
-        <li>React</li>
-        <li>HTML/CSS</li>
-        <li>Git & GitHub</li>
-        <li>Maven</li>
+        <div class="skill-badges">
+
+            <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+
+            <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Boot">
+
+            <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+
+            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+
+            <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" alt="Maven">
+
+            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+
+            <img src="https://img.shields.io/badge/REST_API-02569B?style=for-the-badge&logo=fastapi&logoColor=white">
+
+            <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+
+            <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+
+            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+
+            <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
+        </div>
     </ul>
 </section>
+    
 
 <section id="projects" class="projects">
     <h2>Projects</h2>
@@ -207,12 +241,25 @@
     </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: kulkarnishriharsh2910@gmail.com</p>
-    <p>LinkedIn: www.linkedin.com/in/shriharsh-kulkarni-41b889286</p>
-    
+   <section class="hire-me">
+<h2>Why Hire Me?</h2>
+
+<p>
+✔ Strong Java Fundamentals<br>
+✔ Spring Boot Backend Development<br>
+✔ REST API Integration<br>
+✔ MySQL Database Management<br>
+✔ Fast Learner & Team Player<br>
+✔ Immediate Joiner
+</p>
+
 </section>
+
+<div class="social-links">
+    <a href="https://github.com/2910shri">GitHub</a>
+    <a href="https://linkedin.com/in/shriharsh-kulkarni-41b889286">LinkedIn</a>
+    <a href="mailto:kulkarnishriharsh2910@email.com">Email</a>
+</div>
 
 <footer>
     <p>© 2026 Shriharsh Kulkarni | Java Developer</p>
