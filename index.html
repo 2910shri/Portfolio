@@ -74,21 +74,7 @@
         background: #1e293b;
         border-radius: 10px;
         padding: 30px;
-        margin-top: 40px;
-    }
-
-    .skills ul {
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 15px;
-    }
-
-    .skills li {
-        background: #334155;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
+        margin: 40px 50px;
     }
 
     .project-card {
@@ -96,6 +82,18 @@
         padding: 20px;
         border-radius: 10px;
         margin-top: 20px;
+    }
+
+    .project-card h3 {
+        color: #38bdf8;
+        margin-bottom: 8px;
+    }
+
+    .tech-stack {
+        font-size: 14px;
+        color: #94a3b8;
+        margin-bottom: 10px;
+        font-weight: bold;
     }
 
     footer {
@@ -109,57 +107,58 @@
         header {
             flex-direction: column;
         }
+        .skills, .projects {
+            margin: 20px;
+        }
     }
 
-   .skill-badges{
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      margin-top:20px;
-      justify-content:center;
-      }
+    .skill-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+        justify-content: center;
+    }
       
-   .skill-badges img{
-      transition:0.3s;
-      }
+    .skill-badges img {
+        transition: 0.3s;
+    }
 
-   .skill-badges img:hover{
-      transform:scale(1.08);
-      }
-   #contact{
-    margin-top:50px;
-}
+    .skill-badges img:hover {
+        transform: scale(1.08);
+    }
 
-.contact-text{
-    color:#94a3b8;
-    margin:10px 0 25px;
-}
+    #contact {
+        margin-top: 20px;
+    }
 
-.social-links{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-}
+    .contact-text {
+        color: #94a3b8;
+        margin: 10px 0 25px;
+    }
 
-.social-links a{
-    text-decoration:none;
-    color:white;
-    background:#1e293b;
-    border:1px solid #38bdf8;
-    padding:12px 24px;
-    border-radius:12px;
-    font-weight:600;
-    transition:0.3s ease;
-}
+    .social-links {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
 
-.social-links a:hover{
-    background:#38bdf8;
-    color:#0f172a;
-    transform:translateY(-3px);
-}
+    .social-links a {
+        text-decoration: none;
+        color: white;
+        background: #1e293b;
+        border: 1px solid #38bdf8;
+        padding: 12px 24px;
+        border-radius: 12px;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
 
-
-
+    .social-links a:hover {
+        background: #38bdf8;
+        color: #0f172a;
+        transform: translateY(-3px);
+    }
 </style>
 </head>
 <body>
@@ -178,12 +177,11 @@
     <h2>Java Backend Developer</h2>
     <p>Passionate Spring Boot Developer building scalable backend systems and REST APIs.</p>
     <a href="https://github.com/2910shri" class="btn" target="_blank">View GitHub</a>
-    <a href="Shriharsh_Resume.pdf" class="btn" target="_blank"> View Resume</a>
+    <a href="Shriharsh Kulkarni - Java & Full Stack Developer Resume.pdf" class="btn" target="_blank">View Resume</a>
 </section>
 
 <section id="about">
     <h2>About Me</h2>
- 
     <p>
         I am a passionate and detail-oriented Java Backend Developer with hands-on experience 
         in building scalable web applications using Java, Spring Boot, REST APIs, and MySQL. 
@@ -205,87 +203,81 @@
         add value to a development team.
     </p>
 </section>
-</section>
 
 <section id="skills" class="skills">
     <h2>Skills</h2>
-    <ul>
-        <div class="skill-badges">
-
-            <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-
-            <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Boot">
-
-            <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-
-            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
-
-            <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" alt="Maven">
-
-            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-
-            <img src="https://img.shields.io/badge/REST_API-02569B?style=for-the-badge&logo=fastapi&logoColor=white">
-
-            <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-
-            <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-
-            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
-
-            <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
-        </div>
-    </ul>
+    <div class="skill-badges">
+        <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Boot">
+        <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+        <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+        <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" alt="Maven">
+        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+        <img src="https://img.shields.io/badge/REST_API-02569B?style=for-the-badge&logo=fastapi&logoColor=white" alt="REST API">
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+        <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+        <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+        <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman">
+    </div>
 </section>
-    
 
 <section id="projects" class="projects">
     <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Shree Electronics - Retail Management System</h3>
+        <p class="tech-stack">Java | Spring Boot | React.js | MySQL | REST APIs</p>
+        <p>
+            Full-stack retail management application built for an electronics store using Spring Boot, 
+            React.js, and MySQL. Features product and inventory management, repair tracking, shopping cart 
+            and checkout workflows, and automated SMS notifications for customer repair updates.
+        </p>
+        <a href="https://github.com/2910shri/Shree Electronics-Retail Management System" class="btn" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Resume Analyzer</h3>
+        <p class="tech-stack">Java | Spring Boot | React.js | MySQL | Apache Tika</p>
+        <p>
+            AI-powered resume analysis system developed using Java and Spring Boot.
+            Parses resumes, evaluates skill relevance, and provides structured feedback.
+            Integrated React frontend with MySQL backend.
+        </p>
+        <a href="https://github.com/2910shri/Reaume-Analyzer" class="btn" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>AI Content Generator</h3>
+        <p class="tech-stack">Java | Spring Boot | React.js | MySQL | Gemini AI</p>
+        <p>
+            REST API-based content generation platform using Spring Boot.
+            Integrated external AI APIs securely using environment variables
+            and built responsive frontend for dynamic content generation.
+        </p>
+        <a href="https://github.com/2910shri/ai-content-generator" class="btn" target="_blank">View Project</a>
+    </div>
+
     <div class="project-card">
         <h3>Interview Question Engine</h3>
+        <p class="tech-stack">Java | Spring Boot | React.js | Gemini AI</p>
         <p>
             A Spring Boot-based interview simulation platform that generates technical questions dynamically
             and integrates with a responsive frontend.
         </p>
         <a href="https://github.com/2910shri/Interview_Question_Engine" class="btn" target="_blank">View Project</a>
     </div>
-
-    <div class="project-card">
-        <h3>Resume Analyzer</h3>
-        <p>
-            AI-powered resume analysis system developed using Java and Spring Boot.
-            Parses resumes, evaluates skill relevance, and provides structured feedback.
-            Integrated React frontend with MySQL backend.
-        </p>
-        <a href="https://github.com/2910shri/Reaume-Analyzer" class="btn" target="_blank">
-            View Project
-        </a>
-    </div>
-
-    <div class="project-card">
-        <h3>AI Content Generator</h3>
-        <p>
-            REST API-based content generation platform using Spring Boot.
-            Integrated external AI APIs securely using environment variables
-            and built responsive frontend for dynamic content generation.
-        </p>
-        <a href="https://github.com/2910shri/ai-content-generator" class="btn" target="_blank">
-            View Project
-        </a>
-    </div>
 </section>
 
-   <section class="hire-me">
-<h2>Why Hire Me?</h2>
-
-<p>
-✔ Strong Java Fundamentals<br>
-✔ Spring Boot Backend Development<br>
-✔ REST API Integration<br>
-✔ MySQL Database Management<br>
-✔ Fast Learner & Team Player<br>
-✔ Immediate Joiner
-</p>
-
+<section class="hire-me">
+    <h2>Why Hire Me?</h2>
+    <p>
+        ✔ Strong Java Fundamentals<br>
+        ✔ Spring Boot Backend Development<br>
+        ✔ REST API Integration<br>
+        ✔ MySQL Database Management<br>
+        ✔ Fast Learner & Team Player<br>
+        ✔ Immediate Joiner
+    </p>
 </section>
 
 <section id="contact">
@@ -296,22 +288,14 @@
 
     <div class="social-links">
         <a href="https://github.com/2910shri" target="_blank">GitHub</a>
-
-        <a href="https://www.linkedin.com/in/shriharsh-kulkarni-41b889286" target="_blank">
-            LinkedIn
-        </a>
-
-        <a href="mailto:kulkarnishriharsh2910@email.com">
-            Email
-        </a>
+        <a href="https://www.linkedin.com/in/shriharsh-kulkarni-41b889286" target="_blank">LinkedIn</a>
+        <a href="mailto:kulkarnishriharsh2910@gmail.com">Email</a>
     </div>
 </section>
+
 <footer>
     <p>© 2026 Shriharsh Kulkarni | Java Developer</p>
 </footer>
 
 </body>
-
 </html>
-
-
